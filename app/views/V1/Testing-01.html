@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Heading goes here
+      </h1>
+
+      <p>This is a paragraph of text. It explains in more detail what has happened and wraps across several lines.</p>
+
+      <p>Read more <a href="/url/of/onward/page">about this topic</a>.</p>
+
+
+      <div class="govuk-width-container">
+      <div class="dwp-timeline">
+      <h1 class="govuk-heading-m">Appointments</h1>
+      <ol class="dwp-timeline__events">
+          <li class="dwp-timeline__events--entry">
+              <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Accepted</h2>
+              <p class="govuk-caption-m govuk-!-margin-bottom-1">by John Smith</p>
+              <p class="govuk-caption-m">11 Aug 2021</p>
+          </li>
+          <li class="dwp-timeline__events--entry">
+              <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Declined</h2>
+              <p class="govuk-caption-m govuk-!-margin-bottom-1">by John Smith</p>
+              <p class="govuk-caption-m">10 Aug 2021</p>
+          </li>
+      </ol>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

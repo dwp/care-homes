@@ -1,0 +1,54 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+      Care Home Prototype Repo
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+    <!-- <h3>Problem Statement- </h3>
+    <p>DWP are not always made aware when a citizen is admitted to or leaves residential care. Nor are we typically made aware when the circumstances of their stay change.
+    Often, DWP hears about these changes to a citizen’s circumstances only after a significant delay.
+Citizens are expected to notify DWP of any changes of circumstance. However, given the situation someone in residential care faces, they might struggle to do so.</p><p>
+This situation means that vulnerable citizens do not receive the payments they should, leaving them building up debt from overpayments or left without income they need.</p>
+-->  </p>
+
+      <!--p>
+        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+      </p-->
+<!--
+      <h2 class="govuk-heading-m">About this page</h2>
+
+      <p>We recommend you add links to your prototype to this page, rather than delete it.
+        You'll find this page in the kit at '/app/views/index.html'.</p>
+
+      <p>You can change the service name by editing the file '/app/config.js'.</p>-->
+
+      <h2 class="govuk-heading-m">Prototype's</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        
+        <li>
+          <a href="V1/CHIS-summary.html">Summary Design</a>
+        </li>
+        <li>
+          <a href="V1/CHIS-Tab.html">Tab Design</a>
+        </li>
+     
+        <li>
+          <a href="V1/Testing-01.html">Experiments</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
