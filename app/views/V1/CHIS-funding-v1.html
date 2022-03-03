@@ -1,0 +1,330 @@
+{% extends "layout-CHIS-proto.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+
+  {{ govukHeader() }}
+
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+<div class="govuk-width-container">
+  <section class="dwp-key-details-bar" aria-label="Key details">
+      <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+        <dt class="govuk-visually-hidden">Name:</dt>
+        <dd class="dwp-key-details-bar__name"> Robert De Silva</dd>
+    
+          <dt class="govuk-visually-hidden">National Insurance number:</dt>
+          <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+          
+          <dt class="govuk-visually-hidden">Claim status:</dt>
+  
+        </div>
+            <div class="dwp-key-details-bar__bottom-block">
+            <dt>Date of birth:</dt>
+            <dd>4 June 1972</dd>
+         
+        </div>
+    </dl>
+  </section>
+</div>
+<!--
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>-->
+
+  <a href="../index.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<!-- Body part -->
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <P>
+        <strong class="govuk-tag">TASK FOR YOU</strong>
+      </P>
+      
+      <h1 class="govuk-heading-xl">
+        <!--  {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Assess whether Attendance  Allowance is Payable to the claimant who has now moved into a Care Home
+      </h1>
+    
+
+
+
+
+
+<!--COC Text Start-->
+<h3 class="govuk-heading-s">Description</h3>
+<p>Review the funding and care home details to confirm if the claimant is entitled to receiving Attendance Allowance or Not</p>
+<p>&nbsp;</p>
+
+
+<p>
+  <strong class="govuk-tag govuk-tag--blue">DETAILS</strong>
+</p>
+
+<h2 class="govuk-heading-l">Change of circumstance details</h2>
+
+<!--COC Text End-->
+
+<!--Tab Design-->
+          <div class="govuk-tabs" data-module="govuk-tabs">
+            <h2 class="govuk-tabs__title">
+              Contents
+            </h2>
+            <ul class="govuk-tabs__list">
+              <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#Finance">
+                  Finance details
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#Care-home">
+                Care home details
+                </a>
+              </li>
+              <!--li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-month">
+              Hospital
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-year">
+                  Past year
+                </a>
+              </li-->
+            </ul>
+                    <div class="govuk-tabs__panel" id="Finance">
+            
+                          <table class="govuk-table">
+                            <thead class="govuk-table__head">
+                              <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header">Attributes</th>
+                                <th scope="col" class="govuk-table__header">&nbsp;</th>
+                                <th scope="col" class="govuk-table__header">Values</th>
+                              </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Funding type </td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell">Local authority (LA) funded	</td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Funding status	 </td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell">Current</td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Funding decision notified date	</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell">25 Sep 2020	</td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Funding start date</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell">25 Sep 2020	</td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Payment notified start date</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell">25 Sep 2020	</td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Care type</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell">Residential care</td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Legislation</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"> Part III of the National assistance Act 1948	</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Care-home">
+                            <table class="govuk-table">
+                              <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                  <th scope="col" class="govuk-table__header">Attributes</th>
+                                  <th scope="col" class="govuk-table__header">&nbsp;</th>
+                                  <th scope="col" class="govuk-table__header">Values</th>
+                                </tr>
+                              </thead>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Date of admission	</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell">15 Sep 2020	</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Admitted From	</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell">Non-care residential home	</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Stay Type	</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell">Permanent</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Permanent Stay Decision Date</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell">21 Oct 2020 </td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Discharged Date</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell">Not Available	</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Discharged To	 </td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell">Not Available	</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Current Address	 </td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"> <p>Unit 14, 3 Edgar Buildings George Street Bath,</p> <p> BA1 2FJ, England</p>
+                                  </td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Previous Address	 </td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><p>10 Downing Street </p>SW1A 2AA, LONDON</p></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">LA responsible for care</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell">Essex County Council</td>
+                                </tr>
+                              
+                              </tbody>
+                            </table>
+
+                    </div>           
+          </div>
+<!-- Tab Design End -->
+
+
+
+
+
+
+<!-- Task Checklist Start -->
+        
+<!-- Task Checklist Start -->
+
+
+<!--
+
+      <p>Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>do something</li>
+        <li>update your name, address or other details</li>
+        <li>do something else</li>
+      </ul>
+
+        <p>Registering takes around 5 minutes.</p>
+-->
+
+
+      <a href="confirm.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Close Task
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+<!--
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>You can also <a href="#">register by post</a>.</p>
+
+      <p>The online service is also <a href="#">available in Welsh (ar gael yn Gymraeg)</a>.</p>
+
+      <p>You can’t register for this service if you’re in the UK illegally.</p>
+-->
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-width-container">
+        <div>
+          <h2 class="govuk-heading-m" id="subsection-title">List of Action(s)</h2>
+            <ol style="list-style: none; padding-left:0px;" class="dwp-timeline" class="govuk-list govuk-!-font-size-16">
+                <li class="dwp-timeline__entry">
+                      <p>The following actions are required to complete the assigned task</p>
+                      <ol class="govuk-list govuk-list--number">
+                        <li>Send benefit decision letter to citizen</li>
+                        <li>If “Admitted From” the hospital, send BF9 form to hospital for required information</li>
+                      </ol>
+                </li>
+            </ol>
+        </div>
+      </div>
+
+
+
+
+      <!-- Commeted area
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+-->
+    </div>
+  </div>
+{% endblock %}
