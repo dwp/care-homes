@@ -1,15 +1,10 @@
 {% extends "layout-CHIS-proto.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
   Start page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
-{% block header %}
-  <!-- Blank header with no service name for the start page -->
-
-  {{ govukHeader() }}
-
-{% endblock %}
 
 {% block beforeContent %}
 <div class="govuk-phase-banner">
@@ -81,18 +76,56 @@
     
 
 
-
+      <h3 class="govuk-heading-s">Description</h3>
 <!--COC Text Start-->
 <!--h3 class="govuk-heading-s">Description</h3-->
 <p class="govuk-!-padding-bottom-7">Review the funding and care home details to confirm if the claimant is entitled to receiving Attendance Allowance or Not</p>
 
 
-<p>
-  <strong class="govuk-tag govuk-tag--blue">CITIZEN DETAILS</strong>
-</p>
-    <h2 class="govuk-heading-l">Arthur Jones</h2>
+<h3 class="govuk-heading-m govuk-!-padding-bottom-4">Citizen details</h3>
+
+<dl class="govuk-summary-list govuk-body govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Arthur Jones
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      NINO
+    </dt>
+    <dd class="govuk-summary-list__value">
+      QQ 12 34 56
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Date of birth
+    </dt>
+    <dd class="govuk-summary-list__value">
+      4 June 1950 
+    </dd>
+  </div>
+ 
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--h2 class="govuk-heading-l">Arthur Jones</h2>
     <p>QQ 12 34 56</p>
-    <p class="govuk-!-padding-bottom-4">4 June 1950 (DOB)</p>
+    <p class="govuk-!-padding-bottom-4">4 June 1950 (DOB)</p-->
 
 <h3 class="govuk-heading-m govuk-!-padding-bottom-4">Change of circumstance details</h3>
 
