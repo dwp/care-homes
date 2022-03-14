@@ -65,22 +65,35 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <P>
-        <strong class="govuk-tag">TASK FOR YOU</strong>
-      </P>
-      
+           
       <h1 class="govuk-heading-xl">
         <!--  {% if serviceName %} {{ serviceName }} {% endif %} -->
-        Assess whether attendance  allowance is payable to the claimant who has now moved into a care home
+        Care home task
       </h1>
     
 
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Task
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Assess whether attendance  allowance is payable 
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Description
+          </dt>
+          <dd class="govuk-summary-list__value ">
+            Review the change of circumstances  details to confirm if the claimant is entitled to receiving attendance allowance 
+          </dd>
+        </div>
+      </dl>
 
-      <h3 class="govuk-heading-s">Description</h3>
+
 <!--COC Text Start-->
 <!--h3 class="govuk-heading-s">Description</h3-->
-<p class="govuk-!-padding-bottom-7">Review the funding and care home details to confirm if the claimant is entitled to receiving Attendance Allowance or Not</p>
-
 
 <h3 class="govuk-heading-m govuk-!-padding-bottom-4">Citizen details</h3>
 
@@ -296,11 +309,7 @@
 -->
 
 
-<a href="confirm.html" >
-  <button class="govuk-button" data-module="govuk-button">
-    Mark this task as completed
-  </button>
-</a>
+    
 <!--
       <h2 class="govuk-heading-m">Before you start</h2>
 
@@ -315,9 +324,10 @@
     <div class="govuk-grid-column-one-third">
       <div class="govuk-width-container">
         <div>
-          <h2 class="govuk-heading-m" id="subsection-title">List of Action(s)</h2>
-            <ol style="list-style: none; padding-left:0px;" class="dwp-timeline" class="govuk-list govuk-!-font-size-16" >
-                <li class="dwp-timeline__entry">
+          <h2 class="govuk-heading-m dwp-timeline-hor"  >List of Action(s)</h2>
+          <span class="dwp-timeline__entry-hor"></span>
+            <ol style="list-style: none; padding-left:0px;"  class="govuk-!-margin-bottom-9">
+                <li>
                       <p>The following actions are required to complete the assigned task</p>
                       <ol class="govuk-list govuk-list--number">
                         <li>Send benefit decision letter to citizen</li>
@@ -325,6 +335,13 @@
                       </ol>
                 </li>
             </ol>
+            <a href="confirm.html" >
+              <button class="govuk-button" data-module="govuk-button">
+                Mark this task as completed
+              </button>
+          </a>
+
+           
         </div>
       </div>
 
