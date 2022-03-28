@@ -66,7 +66,7 @@
 <!-- Body part -->
 
   <div class="govuk-grid-row">
-    <div class="govuk-width-container"> <!-- Change here for 2/3/ full coloum -->
+    <div class="govuk-grid-column-two-thirds">
 
            
       <h1 class="govuk-heading-xl">
@@ -148,7 +148,7 @@
 <!--COC Text End-->
 
 <!--Tab Design-->
-          <div class="govuk-tabs govuk-!-padding-bottom-8" data-module="govuk-tabs">
+          <div class="govuk-tabs" data-module="govuk-tabs">
             <h2 class="govuk-tabs__title">
               Contents
             </h2>
@@ -288,33 +288,6 @@
           </div>
 <!-- Tab Design End -->
 
-<!--Check box-->
-
-<div class="govuk-form-group govuk-!-padding-bottom-4">
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-    <!--legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-      <h1 class="govuk-fieldset__heading">
-        Which types of waste do you transport?
-      </h1>
-    </legend!-->
-    <div id="waste-hint" class="govuk-hint">
-     Please select the check box and click the complete button (Content goes here)
-    </div>
-    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-        <label class="govuk-label govuk-checkboxes__label" for="waste">
-       Task have been completed as per the above information.(Content goes here)
-        </label>
-      </div>
-      
-    </div>
-
-  </fieldset>
-</div>
-<!--Check box end-->
-
-
 
 <a href="confirm.html" >
   <button class="govuk-button" data-module="govuk-button">
@@ -325,10 +298,35 @@
 
 
 
+<!-- Task Checklist Start -->
+        
+<!-- Task Checklist Start -->
 
 
+<!--
 
- 
+      <p>Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>do something</li>
+        <li>update your name, address or other details</li>
+        <li>do something else</li>
+      </ul>
+
+        <p>Registering takes around 5 minutes.</p>
+-->
+
+
+    
+<!--
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>You can also <a href="#">register by post</a>.</p>
+
+      <p>The online service is also <a href="#">available in Welsh (ar gael yn Gymraeg)</a>.</p>
+
+      <p>You can’t register for this service if you’re in the UK illegally.</p>
+-->
     </div>
 
     <div class="govuk-grid-column-one-third">
@@ -358,7 +356,32 @@
 
 
 
-    
+      <!-- Commeted area
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+-->
     </div>
   </div>
 {% endblock %}

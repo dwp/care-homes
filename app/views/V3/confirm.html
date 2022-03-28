@@ -6,7 +6,6 @@
 {% endblock %}
 
 
-
 {% block beforeContent %}
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content">
@@ -23,22 +22,6 @@
 </div>
 
 
-<!--
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
-  </div>-->
-
-  
 {% endblock %}
 
 {% block content %}
@@ -46,87 +29,48 @@
 <!-- Body part -->
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-              <div class="govuk-panel govuk-panel--confirmation">
-                <h1 class="govuk-panel__title">
-                  Task completed
-                </h1>
-                <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+    <div class="govuk-width-container"> <!-- Change here for 2/3/ full coloum -->
 
-                <!--div class="govuk-panel__body">
-                  Your reference number<br><strong>HDJ2123F</strong>
-                </div-->
-              </div>
-              <hr class="govuk-section-break govuk-section-break--l govuk-section-break">
-          <h1 class="govuk-heading-xl">
-            <!--  {% if serviceName %} {{ serviceName }} {% endif %} -->
-            What happens next
-          </h1>
-    
-        <p>Click on the "Next task" button to select the next task</p>
-<!--
+<!--Notification-->
 
-      <p>Use this service to:</p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>do something</li>
-        <li>update your name, address or other details</li>
-        <li>do something else</li>
-      </ul>
-
-        <p>Registering takes around 5 minutes.</p>
--->
+<div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <h3 class="govuk-notification-banner__heading">
+      Task completed succesfully    </h3>
+    <p class="govuk-body">Pick up the next task by clicking the “Get a task”</p>
+  </div>
+</div>
 
 
-   
-      <a href="CHIS-funding-v3.html" >
-        <button class="govuk-button" data-module="govuk-button">
-         Next task
-        </button>
-      </a>
-<!--
-      <h2 class="govuk-heading-m">Before you start</h2>
 
-      <p>You can also <a href="#">register by post</a>.</p>
+<!--Notification End -->
 
-      <p>The online service is also <a href="#">available in Welsh (ar gael yn Gymraeg)</a>.</p>
+           
+      <h1 class="govuk-heading-xl">
+        <!--  {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Care home task
+      </h1>
 
-      <p>You can’t register for this service if you’re in the UK illegally.</p>
--->
-    </div>
-
-    <div class="govuk-grid-column-one-third">
+        <h2 class="govuk-heading-s">Description(if needed) </h2>
+        <p class="govuk-!-padding-bottom-7">Get a new task and view task - Content goes here</p>
 
 
 
 
 
-      <!-- Commeted area
-      <aside class="app-related-items" role="complementary">
-        <h2 class="govuk-heading-m" id="subsection-title">
-          Subsection
-        </h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <ul class="govuk-list govuk-!-font-size-16">
-            <li>
-              <a href="#">
-                Related link
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Related link
-              </a>
-            </li>
-            <li>
-              <a href="#" class="govuk-!-font-weight-bold">
-                More <span class="govuk-visually-hidden">in Subsection</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
--->
+        <a href="CHIS-funding-v3.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+          Get a task
+            <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+            </svg></a>
+
+
+
     </div>
   </div>
 {% endblock %}
