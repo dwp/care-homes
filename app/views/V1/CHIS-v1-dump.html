@@ -318,3 +318,240 @@
 </div>
 </div>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------
+
+
+{% extends "layout-CHIS-proto-searchlight.html" %}
+{% extends "layout-searchlight.html" %}
+
+{% block bodyStart %}
+
+
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+
+/* NINO Box Area */
+    .nino-box{
+    background-color: rgb(15, 218, 117);
+    height:30%;
+    }
+/* NINO Box area ends */
+
+    .menu-container{
+        width: 100%;
+        height: 5%;
+        padding: 5px;
+        background-color: black;
+        
+    }
+
+
+    .menu-loc{
+        float: right;
+        padding: 10px 10px 0px 0px;
+        color:white;
+    }
+
+
+/* Tab Box Area */
+.tab-box{
+    background-color: rgb(223, 223, 223);
+    height:30%;
+    }
+/* NITabNO Box area ends */
+
+
+/* Input Box start */
+
+    .input-container {
+     
+      width: 20px; margin: auto; width: 60%; border: 3px solid green; padding: 10px;
+     /* display: -ms-flexbox; 
+      display: flex;
+      width: 20%;
+      */margin-bottom: 15px;
+    }
+    
+    .icon {
+      padding: 10px;
+      background: dodgerblue;
+      color: white;
+      min-width: 50px;
+      text-align: center;
+    }
+    
+    .input-field {
+      width: 30%;
+      padding: 10px;
+      outline: none;
+    }
+    
+    .input-field:focus {
+      border: 2px solid dodgerblue;
+    }
+    
+    /* Set a style for the submit button */
+    .btn {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      width: 10%;
+      opacity: 0.9;
+    }
+    
+    .btn:hover {
+      opacity: 1;
+    }
+    </style>
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- Body part -->
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <!--div class="govuk-width-container"> <!-- Change here for 2/3/ full coloum -->
+
+           
+      <h1 class="govuk-heading-xl">
+        <!--  {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Care home task
+      </h1>
+    
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Task
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Assess whether attendance  allowance is payable 
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Description
+          </dt>
+          <dd class="govuk-summary-list__value ">
+            Review the change of circumstances  details to confirm if the claimant is entitled to receiving attendance allowance 
+          </dd>
+        </div>
+      </dl>
+      {% endblock %}
+
+
+
+
+{% block bodyEnd %}
+<div class="tab-box" >
+    <div class="input-container">
+         <h3>Enter a National Insurance or Organisation Number</h3>
+         <div >
+          
+            <input  class="input-field" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+            <button type="submit" class="btn">Register</button>
+          </div>
+    </div>
+
+
+</div>
+
+<span class="govuk-header__logotype-text">
+Care Homes Information Serviceaaaaa
+</span>
+{% endblock %}
+
+
+{% block main %}
+
+
+<header>
+                <div >
+                        <div class="menu-container" >
+                                    <a href="/">
+                                        <span >
+                        
+                                            <span style="color: white;">
+                                             Searchlight logo
+                                            </span>
+                                        </span>
+                                    </a>
+                           
+                                    <span class="menu-loc" >
+                                        <span  >
+
+
+                                                <a href="searchlight-landing.html" style="color: white;">
+                                                    Go back to Searchlight
+                                                </a>
+
+                               </span>
+
+                        </div>        
+
+                </div>
+    </header>
+{% endblock %}
+
+
+{% block beforeContent %}
+
+<div class="nino-box" >
+        <div class="input-container">
+             <h3>Enter a National Insurance or Organisation Number</h3>
+             <div >
+              
+                <input  class="input-field" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+                <button type="submit" class="btn">Register</button>
+              </div>
+        </div>
+
+
+</div>
+{% endblock %}
+
+
+
+
+{% block Content %}
+
+<div class="tab-box" >
+        <div class="input-container">
+             <h3>Enter a National Insurance or Organisation Number</h3>
+             <div >
+              
+                <input  class="input-field" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+                <button type="submit" class="btn">Register</button>
+              </div>
+        </div>
+
+
+</div>
+
+<span class="govuk-header__logotype-text">
+    Care Homes Information Serviceaaaaa
+    </span>
+
+{% endblock %}
