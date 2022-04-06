@@ -1,0 +1,357 @@
+{% extends "layout-CHIS-proto.html" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <strong class="govuk-tag govuk-tag--pink">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+<!--div class="govuk-width-container">
+  <section class="dwp-key-details-bar" aria-label="Key details">
+      <dl class="dwp-key-details-bar__key-details">
+        <div class="dwp-key-details-bar__top-block">
+        <dt class="govuk-visually-hidden">Name:</dt>
+        <dd class="dwp-key-details-bar__name"> Robert De Silva</dd>
+
+          <dt class="govuk-visually-hidden">National Insurance number:</dt>
+          <dd class="dwp-key-details-bar__nino">QQ 12 34 56 X</dd>
+
+          <dt class="govuk-visually-hidden">Claim status:</dt>
+
+        </div>
+            <div class="dwp-key-details-bar__bottom-block">
+            <dt>Date of birth:</dt>
+            <dd>4 June 1972</dd>
+
+        </div>
+    </dl>
+  </section>
+</div-->
+<!--
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>-->
+
+  <!--a href="../index.html" class="govuk-back-link">Back</a-->
+{% endblock %}
+
+{% block content %}
+
+<!-- Body part -->
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <!--div class="govuk-width-container"> <!-- Change here for 2/3/ full coloum -->
+
+    {{ govukErrorSummary({
+      titleText: "There is a problem",
+      errorList: [
+        {
+          text: "You must confirm you have completed the assessment",
+          href: "#nationality"
+        }
+      ]
+    }) }}
+
+      <h1 class="govuk-heading-l">
+        <!--  {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Assess Attendance Allowance using care home information
+      </h1>
+
+      <p class="govuk-!-padding-bottom-7">Check the care home information to confirm if the citizen is still entitled to Attendance Allowance.</p>
+
+<!--COC Text Start-->
+<!--h3 class="govuk-heading-s">Description</h3-->
+
+<h3 class="govuk-heading-m govuk-!-padding-bottom-4">Citizen information</h3>
+
+<dl class="govuk-summary-list govuk-body govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Arthur Jones
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      NINO
+    </dt>
+    <dd class="govuk-summary-list__value">
+      QQ 12 34 56
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Date of birth
+    </dt>
+    <dd class="govuk-summary-list__value">
+      4 June 1950
+    </dd>
+  </div>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--h2 class="govuk-heading-l">Arthur Jones</h2>
+    <p>QQ 12 34 56</p>
+    <p class="govuk-!-padding-bottom-4">4 June 1950 (DOB)</p-->
+
+<h3 class="govuk-heading-m govuk-!-padding-bottom-4">Care home information</h3>
+
+<!--COC Text End-->
+
+<!--Tab Design-->
+          <div class="govuk-tabs govuk-!-padding-bottom-8" data-module="govuk-tabs">
+            <h2 class="govuk-tabs__title">
+              Contents
+            </h2>
+            <ul class="govuk-tabs__list">
+              <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#Finance">
+                  Funding details
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#Care-home">
+                Care home details
+                </a>
+              </li>
+              <!--li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-month">
+              Hospital
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#past-year">
+                  Past year
+                </a>
+              </li-->
+            </ul>
+                    <div class="govuk-tabs__panel" id="Finance">
+
+                          <table class="govuk-table">
+                            <tbody class="govuk-table__body">
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Funding type </td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"><a href="data-table-responses-funding">Content list</a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Funding status	 </td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"><a href="data-table-responses-funding">Content list</a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Funding decision notified date	</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"><a href="data-table-responses-funding">Content list</a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Funding start date</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"><a href="data-table-responses-funding">Content list</a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Payment notified start date</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"><a href="data-table-responses-funding">Content list</a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Care type</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"><a href="data-table-responses-funding">Content list</a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Legislation</td>
+                                <td class="govuk-table__cell">&nbsp;	</td>
+                                <td class="govuk-table__cell"><a href="data-table-responses-funding">Content list</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Care-home">
+                            <table class="govuk-table">
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Date of admission	</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Admitted from	</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Stay type	</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Permanent stay decision date</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Discharged date</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Discharged to	 </td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Current address	 </td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Previous address</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-body govuk-!-font-weight-bold">Local authority responsible for care</td>
+                                  <td class="govuk-table__cell">&nbsp;	</td>
+                                  <td class="govuk-table__cell"><a href="data-table-responses-care-home">Content list</a></td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+
+                    </div>
+          </div>
+<!-- Tab Design End -->
+
+<!--Check box-->
+
+<div class="govuk-form-group govuk-!-padding-bottom-4">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <!--legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Which types of waste do you transport?
+      </h1>
+    </legend!-->
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        You will not be able to review this information after you complete the assessment.
+      </strong>
+    </div>
+
+    {% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+    {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+    {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+
+
+    {{ govukCheckboxes({
+      idPrefix: "nationality",
+      name: "nationality",
+      fieldset: {
+      },
+      errorMessage: {
+        text: "You must confirm you have completed the assessment"
+      },
+      items: [
+        {
+          value: "other",
+          text: "I have completed this assessment."
+        }
+      ]
+    }) }}
+
+  </fieldset>
+</div>
+<!--Check box end-->
+
+
+
+<a href="confirm.html" >
+  <button class="govuk-button" data-module="govuk-button">
+    Complete assessment
+  </button>
+</a>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <!--div class="govuk-width-container">
+        <div>
+          <h2 class="govuk-heading-m dwp-timeline-hor"  >List of Action(s)</h2>
+          <span class="dwp-timeline__entry-hor"></span>
+            <ol style="list-style: none; padding-left:0px;"  class="govuk-!-margin-bottom-9">
+                <li>
+                      <p>The following actions are required to complete the assigned task</p>
+                      <ol class="govuk-list govuk-list--number">
+                        <li>Send benefit decision letter to citizen</li>
+                        <li>If “Admitted From” the hospital, send BF9 form to hospital for required information</li>
+                      </ol>
+                </li>
+            </ol>
+            <a href="confirm.html" >
+              <button class="govuk-button" data-module="govuk-button">
+                Mark this task as completed
+              </button>
+          </a>
+
+
+        </div>
+      </div-->
+
+
+
+
+
+    </div>
+  </div>
+{% endblock %}

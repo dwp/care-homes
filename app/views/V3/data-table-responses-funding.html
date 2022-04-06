@@ -1,0 +1,96 @@
+{% extends "layout-CHIS-proto.html" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <strong class="govuk-tag govuk-tag--pink">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Body part -->
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+<h2 class="govuk-heading-xl">*DEV CONTENT*<br>Data table responses</h2>
+
+<div class="govuk-button-group">
+  <a href="data-table-responses-funding" class="govuk-button">
+    Funding details
+  </a>
+
+  <a href="data-table-responses-care-home" class="govuk-button">
+    Care home details
+  </a>
+</div>
+
+<h2 class="govuk-heading-l">Funding details</h2>
+
+<h3 class="govuk-heading-m">Funding type</h3>
+<p>Fully self-funded</p>
+<p>Self-funded with NHS funded nursing Care</p>
+<p>Local authority funded</p>
+<p>NHS funded</p>
+<p>NHS funded assessment under COVID-19 provisions</p>
+<p>Not known</p>
+
+
+<h3 class="govuk-heading-m">Funding status</h3>
+<p>Current</p>
+<p>Backdated</p>
+<p>Future-dated</p>
+
+
+<p>Funding decision notified date</p>
+<p>%DD Month YYYY%</p>
+
+
+<h3 class="govuk-heading-m">Funding start date</h3>
+<p>%DD Month YYYY%</p>
+
+
+<h3 class="govuk-heading-m">Payment notified start date</h3>
+<p>%DD Month YYYY%</p>
+
+
+
+<h3 class="govuk-heading-m">Care type</h3>
+<p>Personal care</p>
+<p>Nursing care</p>
+<p>Both personal care and nursing care</p>
+<p>Not decided</p>
+
+
+<h3 class="govuk-heading-m">Legislation</h3>
+<p>Part III of the National Assistance Act 1948</p>
+<p>Mental Health Act 1983</p>
+<p>National Health Service Act 2006</p>
+<p>National Health Service (Wales) Act 2006</p>
+<p>Part IV of the Social Work (Scotland) Act 1968</p>
+<p>Mental Health (Care and Treatment) Act 2003<p>
+<p>Section 16A of the National Health Service (Scotland) Act 1978</p>
+<p>Sections 59 and 59A of the Social Work (Scotland) Act 1968</p>
+<p>Community Care and Health (Scotland) Act 2002</p>
+<p>Other</p>
+
+{% endblock %}

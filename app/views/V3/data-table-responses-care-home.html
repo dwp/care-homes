@@ -1,0 +1,106 @@
+{% extends "layout-CHIS-proto.html" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <strong class="govuk-tag govuk-tag--pink">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Body part -->
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+<h2 class="govuk-heading-xl">*DEV CONTENT*<br>Data table responses</h2>
+
+<div class="govuk-button-group">
+  <a href="data-table-responses-funding" class="govuk-button">
+    Funding details
+  </a>
+
+  <a href="data-table-responses-care-home" class="govuk-button">
+    Care home details
+  </a>
+</div>
+
+<h2 class="govuk-heading-l">Care home details</h2>
+
+
+<h3 class="govuk-heading-m">Date of admission</h3>
+<p>%DD Month YYYY%</p>
+
+
+<h3 class="govuk-heading-m">Admitted from</h3>
+<p>Residential care home</p>
+<p>Hospital</p>
+<p>Non-care residential home</p>
+
+
+
+<h3 class="govuk-heading-m">Stay type</h3>
+<p>Temporary</p>
+<p>Permanent</p>
+<p>Respite</p>
+<p>For assessment</p>
+
+
+<h3 class="govuk-heading-m">Permanent stay decision date</h3>
+<p>%DD Month YYYY%</p>
+
+
+<h3 class="govuk-heading-m">Discharged date</h3>
+<p>%DD Month YYYY%</p>
+
+
+<h3 class="govuk-heading-m">Discharged to</h3>
+<p>Care home</p>
+<p>Hospital</p>
+<p>Non-care residential home</p>
+<p>Out of local authority jurisdiction</p>
+
+
+<h3 class="govuk-heading-m">Current address</h3>
+<p>%Address line 1%<br>
+  %Address line 2 (if present)%<br>
+  %Address line 3 (if present)%<br>
+  %City%<br>
+  %Postcode%<br>
+  %Country (if not UK)%
+</p>
+
+
+<h3 class="govuk-heading-m">Previous address</h3>
+<p>%Address line 1%<br>
+  %Address line 2 (if present)%<br>
+  %Address line 3 (if present)%<br>
+  %City%<br>
+  %Postcode%<br>
+  %Country (if not UK)%
+</p>
+
+
+<h3 class="govuk-heading-m">Local authority responsible for care</h3>
+<p>%String%</p>
+
+{% endblock %}
